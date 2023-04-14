@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://alunos.cefet-rj.br/aluno/login.action?error=" target="tela">Item 1</a>
+                    <ul>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina1.html';">Subitem 1.1</a></li>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina2.html';">Subitem 1.2</a></li>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina3.html';">Subitem 1.3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Item 2</a>
+                    <ul>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina4.html';">Subitem 2.1</a></li>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina5.html';">Subitem 2.2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Item 3</a>
+                    <ul>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina6.html';">Subitem 3.1</a></li>
+                        <li><a href="#" onclick="document.getElementById('meuiframe').src='pagina7.html';">Subitem 3.2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="iframe">
+        <iframe id="meuiframe" src="home.html" frameborder="0" name="tela" id="tela">
+            SEU NAVEGADOR NÃO É COMPATÍVEL COM IFRAMES!
+        </iframe>
+    </section>
+</body>
+</html>
