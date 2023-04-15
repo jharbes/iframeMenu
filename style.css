@@ -13,7 +13,7 @@ header {
     height: 100px; /* altura do header */
     background-color: purple;
     color: #fff;
-    padding: 20px 200px;
+    padding: 20px 20px;
     font-size: 2em;
     /* align-items: center; */
 }
@@ -24,7 +24,7 @@ nav ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav li {
